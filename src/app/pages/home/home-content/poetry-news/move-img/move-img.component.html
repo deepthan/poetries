@@ -1,0 +1,14 @@
+<div nz-col nzSm="24" nzMd="8"  class="itemWrap" #itemWrap (mouseenter)="mouseenter($event)" (mouseleave)="mouseleave($event)">
+  <img src="{{newItem.img}}" alt="">
+  <div class="content" #content>
+      <p>
+          {{ newItem.tit }}
+          
+      </p>
+      <p class='det'>
+          {{ newItem.det }}
+          
+      </p>
+  </div>
+ 
+</div>

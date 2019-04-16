@@ -1,0 +1,39 @@
+<div class='exp-wrap'>
+  <div class='exp-det'> 
+      {{ companyInfo.det }}
+  </div>
+  <div class='exp-arrow'> </div>
+</div>
+
+<div class='company-info container-fluid'>
+  
+  <div nz-row>
+
+      <div nz-col nzSm="24" nzMd="8">
+          <div class='img-wrap' #headImg></div>
+      </div>
+
+      <div  nz-col nzSm="24" nzMd="14" class="exp-tit">
+         {{ companyInfo.tit }}
+      </div>
+
+      <div nz-col nzSm="24" nzMd="4" class="lists-tips">
+          <ul class='company-list'>
+              <li>
+                  <div (click)='changeCom(0)' [ngClass]="firDot ? 'activeDot' : 'defaultDot'"></div>
+              </li>
+              <li>
+                  <div (click)='changeCom(1)' [ngClass]="secDot ? 'activeDot' : 'defaultDot'"></div>
+              </li>
+              <li>
+                 <div (click)='changeCom(2)' [ngClass]="thiDot ? 'activeDot' : 'defaultDot'"></div>
+              </li>
+              <li>
+                 <div (click)='changeCom(3)' [ngClass]="fouDot ? 'activeDot' : 'defaultDot'"></div>
+              </li>
+          </ul>
+      </div>
+
+  </div>
+
+</div>
